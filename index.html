@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="englilsh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Clone</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" /></head>
+
+<body>
+    <nav>
+        <div class="nav-box">
+            <div class="nav-logo">
+                <img src="./imgaes/logo.png" alt="logo_img">
+                <p>Spotify</p>
+            </div>
+           
+            <ul  class="nav-Text">
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Playlist</li>
+                    <li>Account</li>
+            </ul>
+        </div>   
+    </nav>
+
+
+
+    <div class="container">
+        <h3>Best of NCS- No Copyright Sounds</h3>
+        <div class="songList">
+            <div>
+                <div class="songItem">
+                    <img src="./imgaes/logo.png" alt="1">
+                    <span class="songName">Let me love you</span>
+                    <span class="songListPlay"> <span class="timeStamp">2:30</span> <span><i id='0' class="menuPlayBtn fa-solid fa-play"></i></span>
+                    </span>
+                </div>
+                <div class="songItem">
+                    <img src="./imgaes/logo.png" alt="1">
+                    <span class="songName">Let me love you</span>
+                    <span class="songListPlay"> <span class="timeStamp">2:59</span> <span><i id='1' class="menuPlayBtn fa-solid fa-play"></i></span>
+                    </span>
+                </div>
+                <div class="songItem">
+                    <img src="./imgaes/logo.png" alt="1">
+                    <span class="songName">Let me love you</span>
+                    <span class="songListPlay"> <span class="timeStamp">3:34</span> <span><i id='2' class="menuPlayBtn fa-solid fa-play"></i></span>
+                    </span>
+                </div>
+                <div class="songItem">
+                    <img src="./imgaes/logo.png" alt="1">
+                    <span class="songName">Let me love you</span>
+                    <span class="songListPlay"> <span class="timeStamp">3:32</span> <span><i id='3' class=" menuPlayBtn fa-solid fa-play"></i></span>
+                    </span>
+                </div>
+                <div class="songItem">
+                    <img src="./imgaes/logo.png" alt="1">
+                    <span class="songName">Let me love you</span>
+                    <span class="songListPlay"> <span class="timeStamp">3:23</span> <span><i id='4' class=" menuPlayBtn fa-solid fa-play"></i></span>
+                    </span>
+                </div>
+                <div class="songItem">
+                    <img src="./imgaes/logo.png" >
+                    <span class="songName">Let me love you</span>
+                    <span class="songListPlay"> <span class="timeStamp">3:09</span> <span><i id='5' class=" menuPlayBtn fa-solid fa-play"></i></span>
+                    </span>
+                </div>
+                <div class="songItem">
+                    <img src="./imgaes/logo.png" alt="1" class="coverImg">
+                    <span class="songName">Let me love you</span>
+                    <span class="songListPlay"> <span class="timeStamp">2:30</span> <span><i id='6' class="menuPlayBtn fa-solid fa-play"></i></span>
+                    </span>
+                </div>
+                <div class="songItem">
+                    <img src="./imgaes/logo.png" alt="1">
+                    <span class="songName">Let me love you</span>
+                    <span class="songListPlay"> <span class="timeStamp">2:10</span> <span><i id='7'class="menuPlayBtn fa-solid fa-play"></i></span>
+                    </span>
+                </div>
+                <div class="songItem">
+                    <img src="./imgaes/logo.png" alt="1">
+                    <span class="songName">Let me love you</span>
+                    <span class="songListPlay"> <span class="timeStamp">2:56</span> <span><i id='8' class="menuPlayBtn fa-solid fa-play"></i></span>
+                    </span>
+                </div>
+                <div class="songItem">
+                    <img src="./imgaes/logo.png" alt="1">
+                    <span class="songName">Let me love you</span>
+                    <span class="songListPlay"> <span class="timeStamp">2:40</span> <span><i id='9' class="menuPlayBtn fa-solid fa-play"></i></span>
+                    </span>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="bottom">
+        <input type="range" value="0" id="myprogressBar" min="0" max="100">
+        <div class="icons">
+            <i class="prevBtn fa-solid fa-backward"></i>
+            <i class="fa-regular fa-play-circle" id="masterPlay"></i>
+            <i class="forwBtn fa-solid fa-forward"></i>
+        </div>
+        <div class="songInfo">
+            <img src="./imgaes/playing.gif" class="gif">
+            <p class="currentSongName">Warriyo - Mortals</p>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

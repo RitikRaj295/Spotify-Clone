@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+body{
+    font-family: 'Varela Round', sans-serif;
+    position: relative;
+    background-color: rgb(44, 37, 37);
+
+}
+
+nav{
+    font-family: 'Ubuntu', sans-serif;
+}
+.nav-box{
+    min-height:1.5rem;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.nav-logo{
+    display: flex;
+    align-items: center;
+    font-size: 1.3rem;
+    font-weight: bolder;
+}
+.nav-logo img{
+    height: 45px;
+    padding-right: 6px;
+}
+.nav-box ul {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-evenly;
+   align-items: center;
+   list-style: none;
+   gap: 20px;
+   
+}
+.nav-box li{
+    cursor: pointer;
+    &:hover{
+    border-bottom: 1px solid white;
+    }
+    &:active{
+        color:gray;
+    }
+}
+
+
+.container{
+    min-height: 80vh;
+    width: 70vw;
+    background-color: pink;
+    color: white;
+    margin-left: 15vw;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+    padding: 10px;
+    background-image: url('./imgaes/bg.jpg');
+    background-size:cover;
+    overflow-y:scroll;
+    scrollbar-width: none;
+    
+}
+
+.songItem{
+    max-height: 100%;
+    
+    margin-top: 10px;
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid rgb(121, 198, 7);
+    border-radius: 1rem;
+    padding: 7px;
+    background-color: rgb(33, 58, 35);
+    overflow: hidden;
+
+}
+.songItem i{
+    cursor: pointer;
+    &:active{
+        opacity: .3;
+    }
+}
+.songItem img{
+    height: 30px;
+    border: 1px solid white;
+    background-size: cover;
+    
+}
+.songListPlay{
+      display: flex;
+      gap: .6rem;
+}
+
+
+.bottom{
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 4rem;
+    gap: 8px;
+    display: absolute;
+    bottom:0px;
+}
+.bottom input{
+  width: 80%;
+  &:hover{
+    cursor: pointer;
+}
+}
+.bottom i{
+    font-size: 1.4rem;
+    margin-left: 8px;
+    &:hover{
+        cursor: pointer;
+    }
+    &:active{
+        color: blue;
+    }
+}
+
+.gif{
+    height: 20px;
+    width: 7vw;
+    opacity: 0;
+    transition: opacity .4s ease-in;
+
+}
+.songInfo{
+    display: flex;
+    align-items: center;
+    gap:15px;
+    position: absolute;
+    left: 10vw;
+    margin-top: 15px;
+    margin-right: 2px;
+    font-size:1.5vw;
+    font-family: 'Varela Round', sans-serif;
+
+}
+@media (max-width:400px) {
+    .nav-box{
+        height:10vh;
+        background-color: black;
+        color: white;
+        display: flex;
+        justify-content: space-evenly;
+        
+    }
+    .nav-box ul {
+        display: none;
+     }
+     .container{
+        height: 70vh;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        color: white;
+        margin-left: 15vw;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        border-radius: 1rem;
+        padding: 10px;
+        background-image: url('./imgaes/bg.jpg');
+        background-size:cover;
+        overflow-y:scroll;
+        scrollbar-width: none;
+
+     }
+
+     .songItem{
+        max-height: 100%;
+        min-width: 90%;
+        margin: 10px 5px;
+        display: flex;
+        width: 50%;
+        justify-content: space-between;
+        align-items: center;
+        border: 1px solid rgb(121, 198, 7);
+        border-radius: 1rem;
+        padding: 7px;
+        background-color: rgb(33, 58, 35);
+        overflow: hidden;
+    
+    }
+    .bottom{
+        height: 20vh;
+        background-color: black;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 4rem;
+        gap: 8px;
+        display: absolute;
+        bottom:0px;
+    }
+}
